@@ -3,10 +3,11 @@
     public class CylinderCalc
     {
         private const double c_pi = 3.14;
+        private const int c_unitConversionFactor = 1000;
 
         public static double CalculateLitersNeededToFillCylinder(int radius, int height)
         {
-            return CalculateVolumeOfACylinder(radius, height) * 1000;
+            return CalculateVolumeOfACylinder(radius, height) * c_unitConversionFactor;
         }
 
         private static double CalculateVolumeOfACylinder(int radius, int height)
