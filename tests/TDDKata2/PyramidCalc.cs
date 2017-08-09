@@ -1,9 +1,7 @@
 namespace TDDKata2
 {
-    public class PyramidCalc
+    public class PyramidCalc : CalcBase
     {
-        private const int c_unitConversionFactor = 1000;
-
         public double CalculateLitresNeededToFillAPyramid(int length, int width, int height)
         {
             return c_unitConversionFactor * CalculateVolumeOfAPyramid(length, width, height);

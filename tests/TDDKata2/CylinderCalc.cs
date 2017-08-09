@@ -1,9 +1,8 @@
 ﻿namespace TDDKata2
 {
-    public class CylinderCalc
+    public class CylinderCalc : CalcBase
     {
         private const double c_pi = 3.14;
-        private const int c_unitConversionFactor = 1000;
 
         public double CalculateLitersNeededToFillCylinder(int radius, int height)
         {

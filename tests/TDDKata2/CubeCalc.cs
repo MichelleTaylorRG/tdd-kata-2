@@ -3,10 +3,8 @@ using NUnit.Framework;
 
 namespace TDDKata2
 {
-    class CubeCalc
+    class CubeCalc : CalcBase
     {
-        private const int c_unitConversionFactor = 1000;
-
         public double CalculateLitersNeededToFill(int sideInMeters)
         {
             return c_unitConversionFactor * CalculateVolumeOfACube(sideInMeters);

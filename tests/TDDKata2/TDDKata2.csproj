@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalcBase.cs" />
     <Compile Include="CubeCalc.cs" />
     <Compile Include="CubeTests.cs" />
     <Compile Include="CylinderCalc.cs" />
