@@ -5,12 +5,12 @@
         private const double c_pi = 3.14;
         private const int c_unitConversionFactor = 1000;
 
-        public static double CalculateLitersNeededToFillCylinder(int radius, int height)
+        public double CalculateLitersNeededToFillCylinder(int radius, int height)
         {
             return CalculateVolumeOfACylinder(radius, height) * c_unitConversionFactor;
         }
 
-        private static double CalculateVolumeOfACylinder(int radius, int height)
+        private double CalculateVolumeOfACylinder(int radius, int height)
         {
             return c_pi * radius * radius * height;
         }

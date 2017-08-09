@@ -10,7 +10,8 @@ namespace TDDKata2
         [TestCase(10, 10, 3140000)]
         public void CanCalculateLitersNeededToFillACylinder(int radius, int height, double expectedAmountOfWater)
         {
-            var amountOfWater = CylinderCalc.CalculateLitersNeededToFillCylinder(radius, height);
+            var calc = new CylinderCalc();
+            var amountOfWater = calc.CalculateLitersNeededToFillCylinder(radius, height);
             amountOfWater.Should().Be(expectedAmountOfWater);
         }
     }

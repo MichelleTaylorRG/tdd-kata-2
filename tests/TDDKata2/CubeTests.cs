@@ -10,7 +10,8 @@ namespace TDDKata2
         [TestCase(2, 8000)]
         public void CanCalculateLitersNeededToFillACube(int side, double expectedLitres)
         {
-            var amountOfWater = CubeCalc.CalculateLitersNeededToFill(side);
+            var calc = new CubeCalc();
+            var amountOfWater = calc.CalculateLitersNeededToFill(side);
             amountOfWater.Should().Be(expectedLitres);
         }
     }

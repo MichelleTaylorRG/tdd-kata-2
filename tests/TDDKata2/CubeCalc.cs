@@ -7,12 +7,12 @@ namespace TDDKata2
     {
         private const int c_unitConversionFactor = 1000;
 
-        public static double CalculateLitersNeededToFill(int sideInMeters)
+        public double CalculateLitersNeededToFill(int sideInMeters)
         {
             return c_unitConversionFactor * CalculateVolumeOfACube(sideInMeters);
         }
 
-        private static double CalculateVolumeOfACube(int sideInMeters)
+        private double CalculateVolumeOfACube(int sideInMeters)
         {
             return sideInMeters * sideInMeters * sideInMeters;
         }

@@ -10,7 +10,8 @@ namespace TDDKata2
         [TestCase(3, 10, 10, 100000)]
         public void CanCalculateLitresNeededToFillAPyramid(int length, int width, int height, double expectedAmountOfWater)
         {
-            var amountOfWater = PyramidCalc.CalculateLitresNeededToFillAPyramid(length, width, height);
+            var calc = new PyramidCalc();
+            var amountOfWater = calc.CalculateLitresNeededToFillAPyramid(length, width, height);
             amountOfWater.Should().BeApproximately(expectedAmountOfWater, 1);
         }
     }
